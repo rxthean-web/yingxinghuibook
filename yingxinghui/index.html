@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>迎新会小册子 🧧</title>
+
+<style>
+body{
+    margin:0;
+    background: radial-gradient(circle,#8B0000,#3b0000);
+    font-family:"KaiTi","SimSun","Microsoft YaHei",serif;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.title{
+    margin-top:20px;
+    width:100%;
+    text-align:center;
+    font-size:26px;
+    color:#FFD700;
+    text-shadow:0 0 12px red;
+    font-weight:bold;
+}
+
+#book-container{
+    width:95%;
+    max-width:900px;
+    margin-top:20px;
+    overflow-x:auto; /* 水平滚动 */
+    white-space:nowrap;
+    padding-bottom:20px;
+}
+
+/* 每页 */
+.page{
+    display:inline-block;
+    width:400px; /* 每页宽度，可根据需求改 */
+    height:600px;
+    margin:0 10px;
+    border:5px solid gold;
+    box-sizing:border-box;
+}
+
+.page img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+</style>
+</head>
+<body>
+
+<div class="title">🧧 迎新会小册子 🧧</div>
+
+<div id="book-container">
+    <div class="page"><img src="pages/p1.png" alt="p1"></div>
+    <div class="page"><img src="pages/p2.png" alt="p2"></div>
+    <div class="page"><img src="pages/p3.png" alt="p3"></div>
+    <div class="page"><img src="pages/p4.png" alt="p4"></div>
+    <div class="page"><img src="pages/p5.png" alt="p5"></div>
+    <div class="page"><img src="pages/p6.png" alt="p6"></div>
+</div>
+
+</body>
+</html>
